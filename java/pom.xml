@@ -40,7 +40,7 @@
         <javaReleaseVersion>8</javaReleaseVersion>
         <requireJavaVersion>17</requireJavaVersion>
         <skipUnitTests>${skipTests}</skipUnitTests>
-        <pmdVersion>7.18.0</pmdVersion>
+        <pmdVersion>7.19.0</pmdVersion>
     </properties>
 
     <dependencyManagement>
@@ -49,13 +49,13 @@
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bc-jdk18on-bom</artifactId>
                 <type>pom</type>
-                <version>1.82</version>
+                <version>1.83</version>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.cucumber</groupId>
                 <artifactId>cucumber-bom</artifactId>
-                <version>7.31.0</version>
+                <version>7.32.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -83,7 +83,7 @@
             <dependency>
                 <groupId>io.grpc</groupId>
                 <artifactId>grpc-bom</artifactId>
-                <version>1.76.0</version>
+                <version>1.77.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -430,7 +430,7 @@
                     <plugin>
                         <groupId>com.diffplug.spotless</groupId>
                         <artifactId>spotless-maven-plugin</artifactId>
-                        <version>3.0.0</version>
+                        <version>3.1.0</version>
                         <configuration>
                             <checkSkip>${skipUnitTests}</checkSkip>
                             <java>
